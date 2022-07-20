@@ -1,0 +1,159 @@
+body{
+    background-color: antiquewhite;
+    padding: 0; 
+    margin: 0; 
+}
+.container{
+    height: 500px; 
+    width: 500px; 
+    position: absolute; 
+    border: solid 2px gray;
+    /* margin: auto; */
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
+.box1{
+    height: 50px; 
+    width: 220px;
+    background-color: navy;
+    position: relative;
+    top: 194px; 
+    left: 150px; 
+    border-radius: 15px;
+}
+.box2{
+    height: 30px; 
+    width: 190px; 
+    background-color: lightcoral;
+    position: relative;
+    top: 98px;
+    left: 173px;
+    border-radius: 7px;
+}
+.box3 {
+    height: 60px; 
+    width: 100px; 
+    background-color: lightgreen; 
+    position: relative; 
+    top: -8px; 
+    left: 170px;
+    border-radius: 10px;
+}
+.box4{
+    height: 30px; 
+    width: 200px; 
+    background-color: deepskyblue;
+    position: relative; 
+    top: -108px;
+    left: 177px; 
+    transform: rotate(36deg);
+    border-radius: 5px;
+}
+.b1{
+    color: whitesmoke; 
+    position: relative; 
+    top: 15px;
+    left: 40px;
+}
+.b2{
+    color: black;
+    position: relative; 
+    top: 5px; 
+    left: 45px;
+}
+.b3{
+    color: navy; 
+    position: relative; 
+    top: 10px;
+    left: 10px
+}
+.b4{
+    color: black; 
+    position: relative; 
+    top: 5px; 
+    left: 10px; 
+}
+.body{
+    height: 150px; 
+    width: 120px; 
+    background-color: gray;
+    position: relative;
+    top: 350px;
+    left: 60px;
+    border-radius: 80px 0 0 0;
+}
+.face{
+    height: 75px; 
+    width: 100px;
+    background-color: gray;
+    position: relative; 
+    top: 125px;
+    left: 100px;
+    border-radius: 20px;
+}
+.tail{
+    height: 15px; 
+    width: 50px; 
+    background-color: gray; 
+    position: relative; 
+    top: 260px;
+    left: 15px;
+    border-radius: 8px;
+}
+.e1, .e2 {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid gray; 
+    border-left: 20px solid transparent;
+    position: relative;
+}
+.e1{
+    bottom: 100px;
+    left: 100px;
+}
+.e2{
+    bottom: 130px;
+    left: 50px;
+}
+.inner1, .inner2 {
+    height: 30px;
+    width: 2px;
+    background-color: pink;
+    border-right: solid gray 2px;
+}
+.i1, .i2 {
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+}
+.i1{
+    bottom: -20px;
+    left: 60px;
+}
+.i2 {
+    bottom: 10px;
+    left: 25px;
+}
+.p1, .p2{
+    width: 25px; 
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.nose{
+    height: 0;
+    width: 0;
+    border-top: 7px solid pink;
+    border-left: 7px solid transparent;
+    position: relative; 
+    left: 54px;
+    top: -12px;
+    transform: rotate(-225deg);
+}
