@@ -3,18 +3,22 @@ body{
     padding: 0; 
     margin: 0; 
 }
+header{
+    width: 1200px;
+    position: relative;
+    margin: auto;
+    
+}
+h1{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
 
 /* Gray Cat CSS */
-.container{
-    height: 500px; 
-    width: 500px; 
-    position: absolute; 
-    /* border: solid 2px gray; */
-    /* margin: auto; */
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
+.stack{
+    width: 200px; 
+    height: 200px;
 }
 .box1{
     height: 50px; 
@@ -159,19 +163,6 @@ body{
     top: -12px;
     transform: rotate(-225deg);
 }
-.title {
-    height: 200px; 
-    width: 2000px; 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    left: 400px; 
-    right: 0; 
-}
-h1{
-    font-size: 100px;
-    font-family: 'Courier New', Courier, monospace;
-}
 .tag{
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -308,4 +299,65 @@ h1{
     left: 65px;
     border-radius: 10px;
     top: -89px;
+}
+
+/* Grid Container */
+.grid{
+    height: 300px;
+    width: 900px;
+    position: absolute;
+    margin: auto;
+    top: 0; 
+    bottom: 0; 
+    right: 0; 
+    left: 18px; 
+    border: 2px solid red;
+}
+.grid-container{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 50px;
+}
+.item1{
+    grid-column-start: 1; 
+    grid-column-end: 1; 
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    border: 2px solid green;
+}
+.item2{
+    grid-column-start: 2; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    border: 2px solid green;
+}
+.item3{
+    grid-column-start: 3; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 1;
+    border: 2px solid green;
+}
+.item4{
+    grid-column-start: 1; 
+    grid-column-end: 1; 
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    border: 2px solid green;
+}
+.item5{
+    grid-column-start: 2; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    border: 2px solid green;
+}
+.item6{
+    grid-column-start: 3; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 2;
+    border: 2px solid green;
 }
