@@ -3,11 +3,13 @@ body{
     padding: 0; 
     margin: 0; 
 }
+
+/* Gray Cat CSS */
 .container{
     height: 500px; 
     width: 500px; 
     position: absolute; 
-    border: solid 2px gray;
+    /* border: solid 2px gray; */
     /* margin: auto; */
     top: 0; 
     bottom: 0; 
@@ -156,4 +158,154 @@ body{
     left: 54px;
     top: -12px;
     transform: rotate(-225deg);
+}
+.title {
+    height: 200px; 
+    width: 2000px; 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 400px; 
+    right: 0; 
+}
+h1{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tag{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* Sleepy Cat CSS */
+.container-sleepy{
+    /* border: solid 2px gray; */
+    height: 400px; 
+    width: 400px; 
+    position: absolute; 
+    margin: auto;
+    top: 100; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
+.sleepy-body{
+    height: 110px; 
+    width: 200px; 
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    top: 200px;
+    left: 100px;
+    border-radius: 80px 80px 0 0;
+}
+.sleepy-head{
+    height: 70px;
+    width: 80px;
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    top: 130px; 
+    left: 290px;
+    border-radius: 0 80px 80px 0;
+}
+.sleepy-e1, .sleepy-e2{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid rgb(245, 188, 80); 
+    border-right: 20px solid transparent;
+    position: relative;
+}
+.sleepy-e1{
+    bottom: -40px;
+    left: 300px;
+}
+.sleepy-e2{
+    bottom: -10px;
+    left: 320px;
+}
+.sleepy-l1, .sleepy-l2 {
+    height: 15px; 
+    width: 40px;
+    background-color: white;
+    position: relative;
+    top: 0; 
+    left: 10px;
+    border-radius: 7px;
+}
+.sleepy-l1{
+    top: 55px; 
+    left: 145px
+}
+.sleepy-l2{
+    top: 40px;
+    left: 220px;
+}
+.sleepy-tail{
+    height: 20px;
+    width: 100px;
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    left: 5px;
+    top: 20px;
+    border-radius: 8px;
+}
+.sleepy-i1{
+   top: 10px;
+   left: 10px;
+}
+.sleepy-i2{
+    top: -20px; 
+    left: 40px;
+}
+.sleepy-i1, .sleepy-i2 {
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+}
+.sleepy-p1, .sleepy-p2{
+    width: 25px; 
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+.sleepy-nose{
+    height: 0;
+    width: 0;
+    border-top: 7px solid black;
+    border-left: 7px solid transparent;
+    position: relative; 
+    left: 37px;
+    top: -20px;
+    transform: rotate(-225deg);
+}
+.stripe1{
+    height: 50px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 97px;
+    border-radius: 10px;
+}
+.stripe2{
+    height: 40px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 130px;
+    border-radius: 10px;
+    top: -48px;
+}
+.stripe3{
+    height: 40px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 65px;
+    border-radius: 10px;
+    top: -89px;
 }
