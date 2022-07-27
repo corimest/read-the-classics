@@ -26,11 +26,59 @@ footer {
     background-color: rgb(138, 216, 212);
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 25%;
+    display: flex;
+    border-radius: 20px;
 }
 #cover {
         height: auto; 
         width: auto; 
-        max-width: 300px; 
-        max-height: 300px;
+        max-width: 400px; 
+        max-height: 400px;
+}
+.comment{
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    border: solid black 2px;
+}
+.login-form {
+    margin: 20px;
+}
+.login-form input, .login-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+}
+.login-form input:focus, .login-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    border: none;
+  }
+.login-form button {
+    width: 100%;
+    border: none;
+    background: lightpink;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.login-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+.login-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.login-info a {
+    color: #fce138;
 }
