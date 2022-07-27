@@ -1,24 +1,32 @@
 body{
-    background-color: antiquewhite;
-    padding: 0; 
-    margin: 0; 
+    background-color: rgb(246, 222, 226);
 }
-header{
-    width: 1200px;
-    position: relative;
-    margin: auto;
-    
+header {
+    background-color: rgb(177, 222, 220);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 h1{
-    font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
-    position: relative;
+    font-size: 50px;
+}
+.tag{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+.title{
+    width: 700px;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 50px;
 }
 
 /* Gray Cat CSS */
 .stack{
-    width: 200px; 
-    height: 200px;
+    width: 375px; 
+    height: 260px;
+    padding: 10px;
 }
 .box1{
     height: 50px; 
@@ -85,8 +93,8 @@ h1{
     height: 150px; 
     width: 120px; 
     background-color: gray;
-    position: relative;
-    top: 350px;
+    position: absolute;
+    top: 120px;
     left: 60px;
     border-radius: 80px 0 0 0;
 }
@@ -94,8 +102,8 @@ h1{
     height: 75px; 
     width: 100px;
     background-color: gray;
-    position: relative; 
-    top: 125px;
+    position: absolute; 
+    top: 45px;
     left: 100px;
     border-radius: 20px;
 }
@@ -103,8 +111,8 @@ h1{
     height: 15px; 
     width: 50px; 
     background-color: gray; 
-    position: relative; 
-    top: 260px;
+    position: absolute; 
+    top: 255px;
     left: 15px;
     border-radius: 8px;
 }
@@ -163,156 +171,7 @@ h1{
     top: -12px;
     transform: rotate(-225deg);
 }
-.tag{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
 
-}
-
-/* Sleepy Cat CSS */
-.container-sleepy{
-    /* border: solid 2px gray; */
-    height: 400px; 
-    width: 400px; 
-    position: absolute; 
-    margin: auto;
-    top: 100; 
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-}
-.sleepy-body{
-    height: 110px; 
-    width: 200px; 
-    background-color: rgb(245, 188, 80);
-    position: relative;
-    top: 200px;
-    left: 100px;
-    border-radius: 80px 80px 0 0;
-}
-.sleepy-head{
-    height: 70px;
-    width: 80px;
-    background-color: rgb(245, 188, 80);
-    position: relative;
-    top: 130px; 
-    left: 290px;
-    border-radius: 0 80px 80px 0;
-}
-.sleepy-e1, .sleepy-e2{
-    width: 0;
-    height: 0;
-    border-bottom: 30px solid rgb(245, 188, 80); 
-    border-right: 20px solid transparent;
-    position: relative;
-}
-.sleepy-e1{
-    bottom: -40px;
-    left: 300px;
-}
-.sleepy-e2{
-    bottom: -10px;
-    left: 320px;
-}
-.sleepy-l1, .sleepy-l2 {
-    height: 15px; 
-    width: 40px;
-    background-color: white;
-    position: relative;
-    top: 0; 
-    left: 10px;
-    border-radius: 7px;
-}
-.sleepy-l1{
-    top: 55px; 
-    left: 145px
-}
-.sleepy-l2{
-    top: 40px;
-    left: 220px;
-}
-.sleepy-tail{
-    height: 20px;
-    width: 100px;
-    background-color: rgb(245, 188, 80);
-    position: relative;
-    left: 5px;
-    top: 20px;
-    border-radius: 8px;
-}
-.sleepy-i1{
-   top: 10px;
-   left: 10px;
-}
-.sleepy-i2{
-    top: -20px; 
-    left: 40px;
-}
-.sleepy-i1, .sleepy-i2 {
-    width: 30px;
-    height: 30px;
-    background-color: whitesmoke;
-    border-radius: 20px;
-    position: relative;
-}
-.sleepy-p1, .sleepy-p2{
-    width: 25px; 
-    height: 25px;
-    background-color: black;
-    border-radius: 20px;
-    position: relative;
-    left: 2px;
-    top: 2px;
-}
-.sleepy-nose{
-    height: 0;
-    width: 0;
-    border-top: 7px solid black;
-    border-left: 7px solid transparent;
-    position: relative; 
-    left: 37px;
-    top: -20px;
-    transform: rotate(-225deg);
-}
-.stripe1{
-    height: 50px; 
-    width: 10px;
-    background-color: orange;
-    position: relative;
-    left: 97px;
-    border-radius: 10px;
-}
-.stripe2{
-    height: 40px; 
-    width: 10px;
-    background-color: orange;
-    position: relative;
-    left: 130px;
-    border-radius: 10px;
-    top: -48px;
-}
-.stripe3{
-    height: 40px; 
-    width: 10px;
-    background-color: orange;
-    position: relative;
-    left: 65px;
-    border-radius: 10px;
-    top: -89px;
-}
-
-/* Grid Container */
-.grid{
-    height: 300px;
-    width: 900px;
-    position: absolute;
-    margin: auto;
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
-    left: 18px; 
-    border: 2px solid red;
-}
 .grid-container{
     display: grid; 
     grid-template-columns: auto auto auto;
@@ -362,11 +221,189 @@ h1{
     border: 2px solid green;
 }
 
+
+
+
+
 footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #fce138;
+    background-color: rgb(177, 222, 220);
+    margin: 0;
+    padding: 0;
     width: 100%;
-    padding: 40px 35px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+/* Sleepy Orange Cat CSS */
+.container-sleepy{
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+}
+.sleepy-body{
+    height: 110px; 
+    width: 200px; 
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    top: 100px;
+    left: 110px;
+    border-radius: 80px 80px 0 0;
+}
+.sleepy-head{
+    height: 70px;
+    width: 80px;
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    top: 30px; 
+    left: 300px;
+    border-radius: 0 80px 80px 0;
+}
+.sleepy-e1, .sleepy-e2{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid rgb(245, 188, 80); 
+    border-right: 20px solid transparent;
+    position: relative;
+}
+.sleepy-e1{
+    bottom: 60px;
+    left: 340px;
+}
+.sleepy-e2{
+    bottom: 90px;
+    left: 320px;
+}
+.sleepy-l1, .sleepy-l2 {
+    height: 15px; 
+    width: 40px;
+    background-color: white;
+    position: relative;
+    top: 0; 
+    left: 10px;
+    border-radius: 7px;
+}
+.sleepy-l1{
+    top: -45px; 
+    left: 145px
+}
+.sleepy-l2{
+    top: -60px;
+    left: 220px;
+}
+.sleepy-tail{
+    height: 20px;
+    width: 100px;
+    background-color: rgb(245, 188, 80);
+    position: relative;
+    left: 20px;
+    top: -80px;
+    border-radius: 8px;
+}
+.sleepy-i1{
+    top: 10px;
+    left: 10px;
+ }
+ .sleepy-i2{
+     top: -20px; 
+     left: 40px;
+ }
+ .sleepy-i1, .sleepy-i2 {
+     width: 30px;
+     height: 30px;
+     background-color: whitesmoke;
+     border-radius: 20px;
+     position: relative;
+ }
+ .sleepy-p1, .sleepy-p2{
+    width: 25px; 
+    height: 25px;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+.sleepy-nose{
+    height: 0;
+    width: 0;
+    border-top: 7px solid black;
+    border-left: 7px solid transparent;
+    position: relative; 
+    left: 37px;
+    top: -20px;
+    transform: rotate(-225deg);
+}
+.stripe1{
+    height: 50px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 97px;
+    border-radius: 10px;
+}
+.stripe2{
+    height: 40px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 130px;
+    border-radius: 10px;
+    top: -48px;
+}
+.stripe3{
+    height: 40px; 
+    width: 10px;
+    background-color: orange;
+    position: relative;
+    left: 65px;
+    border-radius: 10px;
+    top: -89px;
+}
+
+
+/* Login Form CSS */
+.login-form {
+    margin: 20px;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-form input, .login-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-form input:focus, .login-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    border: none;
+  }
+.login-form button {
+    width: 100%;
+    border: none;
+    background: lightpink;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.login-form button:hover {
+    color: white;
+    background: #39a6b2;
+}
+.login-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.login-info a {
+    color: white;
 }
