@@ -361,3 +361,12 @@ h1{
     grid-row-end: 2;
     border: 2px solid green;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}

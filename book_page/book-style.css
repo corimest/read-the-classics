@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+    padding: 0; 
+    margin: 0; 
+}
+header h1{
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+p {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.info{
+    padding: 10px; 
+    margin: 10px
+}
+footer {
+    background-color: rgb(138, 216, 212);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#cover {
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 300px;
+}
