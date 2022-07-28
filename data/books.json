@@ -1,0 +1,52 @@
+{
+    "books": [
+      {
+        "id": "0",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "keywords": [
+          "romance", 
+          "Enemies-to-Lovers", 
+          "Period"
+        ]
+      }, 
+      {
+        "id": "1",
+        "title": "Jane Eyre",
+        "author": "Charlotte Bronte",
+        "keywords": [
+          "scary", 
+          "gothic", 
+          "Period"
+        ]
+      }, 
+      {
+        "id": "2",
+        "title": "Tom Sawyer",
+        "author": "Mark Twain",
+        "keywords": [
+          "Coming-of-Age", 
+          "American", 
+          "Period"
+        ]
+      }, 
+      {
+        "id": "3",
+        "title": "Harry Potter",
+        "author": "JK Rowling",
+        "keywords": [
+          "Coming-of-Age", 
+          "fantasy"
+        ]
+      }, 
+      {
+        "id": "4",
+        "title": "Hunger Games",
+        "author": "Suzanne Collins",
+        "keywords": [
+          "Dystopian", 
+          "Adventure"
+        ]
+      } 
+    ]
+    }
