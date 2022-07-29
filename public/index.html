@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Classics with Cats</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../public/css/style.css">
     </head>
     <body>
         <header>
@@ -53,16 +53,71 @@
             </div>
 
         </header>
+        <section class="main">
+            <section class="search">
+                <h3>Search for a Book</h3>
+                <form id="book-search">
+                    <ul>
+                        <li>
+                            <label for="title-input">Book Title</label>
+                            <input type="text" id="title-input" placeholder="Book Title"/>
+                        </li>
+                        <li>
+                            <label for="author">Author</label>
+                            <input id="author" placeholder="Author"/>
+                        </li>
+                    </ul>
+                </form>
+                <h3>Filter By Genre.</h3>
+                <form id="genre-form">
+                    <ul>
+                        <li>
+                            <input type="radio" id="romance-input" name="keywords" value="romance">
+                            <label for="romance-input">Romance</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="enemies-to-lovers-input" name="keywords" value="enemies-to-lovers">
+                            <label for="enemies-to-lovers-input">Enemies-to-Lovers</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="period-input" name="keywords" value="period">
+                            <label for="period-input">Period</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="scary-input" name="keywords" value="scary">
+                            <label for="scary-input">Scary</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="gothic-input" name="keywords" value="gothic">
+                            <label for="gothic-input">Gothic</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="coming-of-age-input" name="keywords" value="coming-of-age">
+                            <label for="coming-of-age-input">Coming-of-Age</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="american-input" name="keywords" value="american">
+                            <label for="american-input">American</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="fantasy-input" name="keywords" value="fantasy">
+                            <label for="fantasy-input">Fantasy</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="dystopian-input" name="keywords" value="dystopian">
+                            <label for="dystopian-input">Dystopian</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="adventure-input" name="keywords" value="adventure">
+                            <label for="adventure-input">Adventure</label>
+                    </ul>
+                    <button class="btn">Find Books</button>
+                </form>
+            </section>
 
-        <section class="grid">
-            <div class="grid-container">
-                <div class="item1">1</div>
-                <div class="item2">2</div>
-                <div class="item3">3</div>
-                <div class="item4">4</div>
-                <div class="item5">5</div>
-                <div class="item6">6</div>
+            <div class="api">
             </div>
+            
         </section>
 
         <footer>
@@ -72,7 +127,7 @@
                     <label for="login-name">Your Name</label>
                     <input type="text" id="login-name" placeholder="Your Name"/>
                     <label for="password">Password</label>
-                    <textarea id="password" placeholder="Password"></textarea>
+                    <input id="password" placeholder="Password"></textarea>
                     <button type="submit">Enter</button>
                 </form>
             </div>
@@ -100,5 +155,4 @@
                 </div>
             
         </footer>
-
     </body>
