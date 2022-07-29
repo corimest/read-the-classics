@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const { Op } = require('sequelize');
-const { Recipe, User, Comment } = require('../models');
+const { Book, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     console.log(req.session)
-    Recipe.findAll({
+    Book.findAll({
         where: {
           id: {
             [Op.between]: [1,6]
@@ -13,8 +13,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
-            'ingredients',
-            'like',
+            'author',
             'category',
             'image_url'
         ],
@@ -42,7 +41,7 @@ router.get('/', (req, res) => {
 // find all books
 router.get('/books', (req, res) => {
   console.log(req.session)
-  Recipe.findAll({
+  Book.findAll({
       attributes: [
           'id',
           'title',
@@ -72,7 +71,7 @@ router.get('/books', (req, res) => {
 
 // get single post
 router.get('/books/:id', (req,res) => {
-  Recipe.findOne({
+  Book.findOne({
       where: {
         id: req.params.id
       },
@@ -82,8 +81,7 @@ router.get('/books/:id', (req,res) => {
         'category',
         'image_url',
         'created_at',
-        'like',
-        'ingredients'
+        'author'
       ],
       include: [
         {
@@ -119,7 +117,7 @@ router.get('/books/:id', (req,res) => {
 
 router.get('/books/category/:category', (req, res) => {
   console.log(req.params.category)
-  Recipe.findAll({
+  Book.findAll({
       where: {
         category: req.params.category
       },

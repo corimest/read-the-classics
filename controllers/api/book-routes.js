@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
       'id',
       'title',
       'author',
-      'like',
       'category',
       'image_url'
     ],
@@ -46,7 +45,6 @@ router.get('/:category', (req, res) => {
       'id',
       'title',
       'author',
-      'like',
       'category',
       'image_url'
     ],
@@ -83,7 +81,6 @@ router.get('/:id', (req, res) => {
       'id',
       'title',
       'author',
-      'like',
       'category',
       'image_url'
     ],
@@ -112,7 +109,6 @@ router.post('/', withAuth, (req, res) => {
   Book.create({
     title: req.body.title,
     author: req.body.author,
-    like: req.body.like,
     category: req.body.category,
     image_url: req.body.image_url,
     user_id: req.session.user_id

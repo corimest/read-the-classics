@@ -19,10 +19,6 @@ Book.init(
         type: DataTypes.STRING,
         allowNull: false
       },
-      likes: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-      },
       category: {
         type: DataTypes.STRING,
         allowNull: false

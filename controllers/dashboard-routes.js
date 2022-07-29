@@ -14,7 +14,6 @@ router.get('/', withAuth, (req, res) => {
         'id',
         'title',
         'author',
-        'like',
         'category',
         'image_url'
     ],
@@ -57,7 +56,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
             'id',
             'title',
             'author',
-            'like',
             'category',
             'image_url'
         ],
