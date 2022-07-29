@@ -1,5 +1,10 @@
--- -- DROP DATABASE
--- DROP DATABASE IF EXISTS read_the_classics_db;
+DROP DATABASE if exists classics_with_cats; 
+CREATE DATABASE classics_with_cats; 
+USE classics_with_cats; 
 
--- -- CREATE DATABASE
--- CREATE DATABASE read_the_classics_db;
+CREATE TABLE books (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY, 
+    title VARCHAR(50) NOT NULL, 
+    author VARCHAR(50) NOT NULL, 
+    genre VARCHAR(30) NOT NULL   
+); 
