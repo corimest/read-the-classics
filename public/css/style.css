@@ -172,7 +172,7 @@ h1{
     transform: rotate(-225deg);
 }
 
-.grid-container{
+/* .grid-container{
     display: grid; 
     grid-template-columns: auto auto auto;
     gap: 50px;
@@ -219,7 +219,7 @@ h1{
     grid-row-start: 2; 
     grid-row-end: 2;
     border: 2px solid green;
-}
+} */
 
 
 
@@ -364,7 +364,7 @@ footer {
 
 
 /* Login Form CSS */
-.login-form {
+.login-form, .search{
     margin: 20px;
     justify-content: space-between;
     font-family: 'Courier New', Courier, monospace;
@@ -379,24 +379,24 @@ footer {
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
     font-family: 'Courier New', Courier, monospace;
 }
-.login-form input:focus, .login-form textarea:focus {
+.login-form input:focus, .login-form textarea:focus, .book-search:focus {
     background-color: rgba(255,255,255, 1);
     border: none;
   }
 .login-form button {
     width: 100%;
     border: none;
-    background: lightpink;
+    background: rgb(254, 155, 169);
     color: black;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
     border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
-.login-form button:hover {
+.login-form button:hover, .btn:hover {
     color: white;
     background: #39a6b2;
 }
@@ -406,4 +406,37 @@ footer {
 }
 .login-info a {
     color: white;
+}
+
+/* Main middle section */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.api {
+    border: 2px solid black;
+    width: 1150px;
+}
+
+/* Search Form Css */
+.search {
+    height: 480px;
+    width: 250px;
+    background:rgb(254, 155, 169);
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn {
+    width: 100%;
+    border: none;
+    background: rgb(177, 222, 220);
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
