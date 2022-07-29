@@ -28,6 +28,8 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
     "sequelize": "^6.3.5"
-  },
-  "keywords": []
+  }, 
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
 }
