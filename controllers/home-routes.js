@@ -159,7 +159,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-  res.render('login-page', { layout: 'login'});
+  res.render('login-page');
 });
 
 module.exports = router;

@@ -1,0 +1,121 @@
+<aside id="fh5co-hero">
+    <div class="hero-banner jumbotron jumbotron-fluid">
+        <div class="stack">
+            <div class="body">
+                <div class="e1">
+                    <div class="inner1"></div>
+                </div>
+                <div class="e2">
+                    <div class="inner2"></div>
+                </div>
+            </div>
+            <div class="face">
+                <div class="i1">
+                    <div class="p1"></div>
+                </div>
+                <div class="i2">
+                    <div class="p2"></div>
+                </div>
+                <div class="nose"></div>
+            </div>
+            <div class="tail"></div>
+            <div class="box1">
+                <div class="b1">
+                    <p>A Tail of Two Kitties</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="b2">
+                    <p>Don Catxote</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="b3">
+                    <p>The Great Catsby</p>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="b4">
+                    <p>A Street-Cat Named Desire</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>Classics with Cats</h1>
+            <p class="tag">Explore reading with cat friends</p>
+        </div>
+    </div>
+</aside>
+
+<div id="fh5co-services" class="fh5co-bg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 text-center">
+                <a href="/books/category/Fiction">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-fiction"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Fiction</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <a href="/books/category/Nonfiction">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-fried-egg"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Nonfiction</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <a href="/books/category/Drama">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-boiled"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Drama</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <a href="/books/category/Poetry">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-piece-of-cake"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Poetry</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <a href="/books/category/Folklore">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="flaticon-piece-of-cake"></i>
+                        </span>
+                        <h3 class="btn btn-primary btn-outline">Folklore</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fh5co-started">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Featured Books</h2>
+            </div>
+        </div>
+        <div class="row">
+            {{#each books as |book|}}
+            {{> book-info book }}
+            {{/each}}
+        </div>
+    </div>
+</div>

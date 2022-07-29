@@ -23,6 +23,10 @@ Book.init(
         type: DataTypes.STRING,
         allowNull: false
       },
+      surmary: {
+        type: DataTypes.TEXT('long'),
+        allowNull: false
+      },
       image_url: {
         type: DataTypes.STRING,
         allowNull: true,
