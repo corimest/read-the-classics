@@ -84,7 +84,7 @@ const bookdata = [
     category: 'Folklore',
     image_url: 'https://m.media-amazon.com/images/I/51R-cW5DPTL.jpg',
     user_id: 5
-  }
+  },
   {
     title: 'Electric Eden',
     author: 'Rob Young',

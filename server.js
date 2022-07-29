@@ -1,118 +1,45 @@
+// import packages
+const path = require('path');
 const express = require('express');
-const app = express(); 
-const { books } = require('./data/books.json')
-const fs = require('fs'); 
-const path = require('path'); 
+const session = require('express-session');
+const exphbs = require('express-handlebars');
 
+const app = express();
 const PORT = process.env.PORT || 3001;
 
-//middleware
-app.use(express.urlencoded({ extended: true })); 
-app.use(express.json()); 
-app.use(express.static(__dirname)); 
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-//query function
-function filterByQuery(query, booksArray) {
-    let keywordsArray = []; 
-    let filteredResults = booksArray; 
-    if (query.keywords){
-        if(typeof query.keywords === 'string') {
-            keywordsArray = [query.keywords]; 
-        } else { 
-            keywordsArray = query.keywords; 
-        }
-        console.log(keywordsArray);
-        keywordsArray.forEach(word => {
-            filteredResults = filteredResults.filter(
-                book => book.keywords.indexOf(word) !== -1
-            );
-        });
-    }
-    if (query.author) {
-        filteredResults = filteredResults.filter(book => book.author === query.author); 
-    }
-    if (query.title) {
-        filteredResults = filteredResults.filter(book => book.title === query.title); 
-    }
-    return filteredResults; 
-}
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
-//Find By ID function
-function findById(id, booksArray){
-    const result = booksArray.filter(book => book.id === id)[0]; 
-    return result; 
-}
+// import routes and middleware
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
 
-//Create New Book function
-function createNewBook(body, booksArray) {
-    const book = body; 
-    booksArray.push(book); 
-    fs.writeFileSync(
-        path.join(__dirname, './data/books.json'), 
-        JSON.stringify({ books: booksArray}, null, 2)
-    );
-    return book; 
-}
+const hbs = exphbs.create({ helpers });
 
-//Validate User Book Entry
-function validateBook(book) {
-    if (!book.title || typeof book.title !== 'string') {
-        return false;
-    }
-    if (!book.author || typeof book.author !== 'string') {
-        return false;
-    }
-    if (!book.keywords || !Array.isArray(book.keywords)) {
-        return false;
-    }
-    return true;
-}
+// set up handlebars engine
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
-// Route for filtered results
-app.get ('/api/books', (req, res) => {
-    let results = books; 
-    if (req.query) {
-        results = filterByQuery(req.query, results); 
-    }
-    res.json(results); 
-}); 
+// set up static directory to server
+app.use(session(sess));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-//Route to Get all books
-app.get ('/api/books', (req, res) => {
-    res.send(books); 
-}); 
+// turn on routes
+app.use(routes);
 
-//Route to Get specific book
-app.get('/api/books/:id', (req, res) => {
-    const result = findById(req.params.id, books); 
-    if (result) {
-        res.json(result); 
-    } else {
-        res.send(404); 
-    }
-}); 
-
-//Post Route
-app.post('/api/books', (req, res) => {
-    //set id on what the next index of the array 
-    req.body.id = books.length.toString(); 
-
-    if (!validateBook(req.body)) {
-        res.status(400).send("This book is not properly formatted, so the cats can't read it. Please try again."); 
-    } else {
-
-    //add new book to JSON and books array 
-    const book = createNewBook(req.body, books); 
-
-    res.json(book); 
-    }
+// turn on connection to db and server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
-
-//route for html 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html')); 
-}); 
-
-app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
-  });
