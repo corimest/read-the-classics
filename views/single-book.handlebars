@@ -8,8 +8,11 @@
 
         <div class="row animate-box single fh5co-heading">
             <div class="col-md-6">
+                <img class="img-responsive" src="{{book.image_url}}" alt="{{book.title}}">
+            </div>
+            <div class="col-md-6">
                 <div class="desc">
-                    <h3>Book</h3>
+                    <h3>Author</h3>
                     <p>{{book.author}}</p>
                 </div>
                 <div class="desc">
@@ -18,9 +21,6 @@
                         <li>{{book.surmary}}</li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="{{book.image_url}}" alt="{{book.title}}">
             </div>
             <div class="col-md-12 text-center mt-25">
                 <h4>Posted by {{book.user.username}} on {{format_date book.created_at}}</h4>
