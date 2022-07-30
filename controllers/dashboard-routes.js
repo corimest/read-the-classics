@@ -69,8 +69,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         attributes: ['username']
       }
     ]
-  }
-  )
+  })
     .then(dbPostData => {
       const book = dbPostData.get({ plain: true });
 
