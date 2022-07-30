@@ -29,39 +29,39 @@ h1{
     padding: 10px;
 }
 .box1{
-    height: 50px; 
+    height: 50px;
     width: 220px;
     background-color: navy;
     position: relative;
-    top: 194px; 
-    left: 150px; 
+    top: -52px;
+    left: 170px;
     border-radius: 15px;
 }
 .box2{
-    height: 30px; 
-    width: 190px; 
+    height: 30px;
+    width: 190px;
     background-color: lightcoral;
     position: relative;
-    top: 98px;
-    left: 173px;
-    border-radius: 7px;
+    top: -132px;
+    left: 190px;
+    border-radius: 7px
 }
 .box3 {
-    height: 60px; 
-    width: 100px; 
-    background-color: lightgreen; 
-    position: relative; 
-    top: -8px; 
-    left: 170px;
+    height: 60px;
+    width: 100px;
+    background-color: lightgreen;
+    position: relative;
+    top: -224px;
+    left: 190px;
     border-radius: 10px;
 }
 .box4{
-    height: 30px; 
-    width: 200px; 
+    height: 30px;
+    width: 200px;
     background-color: deepskyblue;
-    position: relative; 
-    top: -108px;
-    left: 177px; 
+    position: relative;
+    top: -308px;
+    left: 193px;
     transform: rotate(36deg);
     border-radius: 5px;
 }
@@ -90,29 +90,29 @@ h1{
     left: 10px; 
 }
 .body{
-    height: 150px; 
-    width: 120px; 
+    height: 150px;
+    width: 120px;
     background-color: gray;
-    position: absolute;
-    top: 120px;
+    position: relative;
+    top: 80px;
     left: 60px;
     border-radius: 80px 0 0 0;
 }
 .face{
-    height: 75px; 
+    height: 75px;
     width: 100px;
     background-color: gray;
-    position: absolute; 
-    top: 45px;
+    position: relative;
+    top: -144px;
     left: 100px;
     border-radius: 20px;
 }
 .tail{
-    height: 15px; 
-    width: 50px; 
-    background-color: gray; 
-    position: absolute; 
-    top: 255px;
+    height: 15px;
+    width: 50px;
+    background-color: gray;
+    position: relative;
+    top: -10px;
     left: 15px;
     border-radius: 8px;
 }
@@ -172,59 +172,7 @@ h1{
     transform: rotate(-225deg);
 }
 
-/* .grid-container{
-    display: grid; 
-    grid-template-columns: auto auto auto;
-    gap: 50px;
-    padding: 50px;
-}
-.item1{
-    grid-column-start: 1; 
-    grid-column-end: 1; 
-    grid-row-start: 1; 
-    grid-row-end: 1;
-    border: 2px solid green;
-}
-.item2{
-    grid-column-start: 2; 
-    grid-column-end: 2; 
-    grid-row-start: 1; 
-    grid-row-end: 1;
-    border: 2px solid green;
-}
-.item3{
-    grid-column-start: 3; 
-    grid-column-end: 3; 
-    grid-row-start: 1; 
-    grid-row-end: 1;
-    border: 2px solid green;
-}
-.item4{
-    grid-column-start: 1; 
-    grid-column-end: 1; 
-    grid-row-start: 2; 
-    grid-row-end: 2;
-    border: 2px solid green;
-}
-.item5{
-    grid-column-start: 2; 
-    grid-column-end: 2; 
-    grid-row-start: 2; 
-    grid-row-end: 2;
-    border: 2px solid green;
-}
-.item6{
-    grid-column-start: 3; 
-    grid-column-end: 3; 
-    grid-row-start: 2; 
-    grid-row-end: 2;
-    border: 2px solid green;
-} */
-
-
-
-
-
+/
 footer {
     background-color: rgb(177, 222, 220);
     margin: 0;
@@ -396,7 +344,7 @@ footer {
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-.login-form button:hover, .btn:hover {
+.login-form button:hover {
     color: white;
     background: #39a6b2;
 }
@@ -428,15 +376,4 @@ ul{
     background:rgb(254, 155, 169);
     border-radius: 10px;
     padding: 10px;
-}
-.btn {
-    width: 100%;
-    border: none;
-    background: rgb(177, 222, 220);
-    color: black;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
 }
