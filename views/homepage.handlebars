@@ -48,74 +48,71 @@
     </div>
 </aside>
 
-<div id="fh5co-services" class="fh5co-bg-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-2 text-center">
-                <a href="/books/category/Fiction">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                            <i class="flaticon-fiction"></i>
-                        </span>
-                        <h3 class="btn btn-primary btn-outline">Fiction</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 col-sm-2 text-center">
-                <a href="/books/category/Nonfiction">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                            <i class="flaticon-fried-egg"></i>
-                        </span>
-                        <h3 class="btn btn-primary btn-outline">Nonfiction</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 col-sm-2 text-center">
-                <a href="/books/category/Drama">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                            <i class="flaticon-boiled"></i>
-                        </span>
-                        <h3 class="btn btn-primary btn-outline">Drama</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 col-sm-2 text-center">
-                <a href="/books/category/Poetry">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                            <i class="flaticon-piece-of-cake"></i>
-                        </span>
-                        <h3 class="btn btn-primary btn-outline">Poetry</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2 col-sm-2 text-center">
-                <a href="/books/category/Folklore">
-                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
-                        <span class="icon">
-                            <i class="flaticon-piece-of-cake"></i>
-                        </span>
-                        <h3 class="btn btn-primary btn-outline">Folklore</h3>
-                    </div>
-                </a>
-            </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-sm-2 text-center">
+            <a href="/books/category/Fiction">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i class="flaticon-fiction"></i>
+                    </span>
+                    <h3 class="btn btn-primary btn-outline">Fiction</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-2 text-center">
+            <a href="/books/category/Nonfiction">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i class="flaticon-fried-egg"></i>
+                    </span>
+                    <h3 class="btn btn-primary btn-outline">Nonfiction</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-2 text-center">
+            <a href="/books/category/Drama">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i class="flaticon-boiled"></i>
+                    </span>
+                    <h3 class="btn btn-primary btn-outline">Drama</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-2 text-center">
+            <a href="/books/category/Poetry">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i class="flaticon-piece-of-cake"></i>
+                    </span>
+                    <h3 class="btn btn-primary btn-outline">Poetry</h3>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-sm-2 text-center">
+            <a href="/books/category/Folklore">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                    <span class="icon">
+                        <i class="flaticon-piece-of-cake"></i>
+                    </span>
+                    <h3 class="btn btn-primary btn-outline">Folklore</h3>
+                </div>
+            </a>
         </div>
     </div>
 </div>
 
-<div id="fh5co-started">
-    <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>Featured Books</h2>
-            </div>
+<div class="container">
+    <div class="row animate-box">
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+            <h2>Featured Books</h2>
         </div>
-        <div class="row">
-            {{#each books as |book|}}
-            {{> book-info book }}
-            {{/each}}
-        </div>
+    </div>
+    <div class="row">
+        {{#each books as |book|}}
+        {{> book-info book }}
+        {{/each}}
     </div>
 </div>

@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
             'id',
             'title',
             'author',
+            'summary',
             'category',
             'image_url'
         ],
@@ -79,6 +80,7 @@ router.get('/books/:id', (req,res) => {
         'id',
         'title',
         'category',
+        'summary',
         'image_url',
         'created_at',
         'author'
@@ -115,6 +117,7 @@ router.get('/books/:id', (req,res) => {
   });
 })
 
+// get books by category
 router.get('/books/category/:category', (req, res) => {
   console.log(req.params.category)
   Book.findAll({
