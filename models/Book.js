@@ -19,12 +19,12 @@ Book.init(
         type: DataTypes.STRING,
         allowNull: false
       },
-      category: {
-        type: DataTypes.STRING,
+      summary: {
+        type: DataTypes.TEXT('long'),
         allowNull: false
       },
-      surmary: {
-        type: DataTypes.TEXT('long'),
+      category: {
+        type: DataTypes.STRING,
         allowNull: false
       },
       image_url: {

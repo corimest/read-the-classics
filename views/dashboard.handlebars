@@ -1,17 +1,18 @@
-<div id="fh5co-product">
-    <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>My Books</h2>
-                <p class="mt-40">
-                    <a href="/dashboard/new" class="btn btn-primary btn-outline btn-lg">Add a Book</a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            {{#each books as |book|}}
-            {{> my-book-info book }}
-            {{/each}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+            <h2>My Books</h2>
+            <p class="mt-40">
+                <a href="/dashboard/new" class="btn btn-primary btn-outline btn-lg">Add a Book</a>
+            </p>
         </div>
     </div>
+    {{#if books.length}}
+    <div class="row">
+        {{#each books as |book|}}
+        {{> book-info book }}
+        <a href="/dashboard/edit/{{id}}" class="btn btn-primary btn-outline btn-lg">Edit Book</a>
+        {{/each}}
+    </div>
+    {{/if}}
 </div>

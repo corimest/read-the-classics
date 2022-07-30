@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
             'id',
             'title',
             'author',
+            'summary',
             'category',
             'image_url'
         ],

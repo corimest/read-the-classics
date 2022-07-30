@@ -1,59 +1,56 @@
-<div id="fh5co-product" class="fh5co-bg-section">
-    <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>{{book.title}}</h2>
-            </div>
+<div class="container">
+    <div class="row animate-box">
+        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+            <h2>{{book.title}}</h2>
         </div>
-
-        <div class="row animate-box single fh5co-heading">
-            <div class="col-md-6">
-                <img class="img-responsive" src="{{book.image_url}}" alt="{{book.title}}">
-            </div>
-            <div class="col-md-6">
-                <div class="desc">
-                    <h3>Author</h3>
-                    <p>{{book.author}}</p>
-                </div>
-                <div class="desc">
-                    <h3>Surmary</h3>
-                    <ul>
-                        <li>{{book.surmary}}</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-12 text-center mt-25">
-                <h4>Posted by {{book.user.username}} on {{format_date book.created_at}}</h4>
-            </div>
-        </div>
-
-        {{#if book.comments.length}}
-        {{> comments book.comments}}
-        {{/if}}
-
-        {{#if loggedIn}}
-        <div class="row animate-box">
-            <div class="col-md-10 col-md-offset-1">
-                <h3>Add a comment</h3>
-
-                <form class="comment-form">
-                    <div class="row form-group">
-                        <div class="col-md-12">
-                            <textarea name="comment" id="comment" cols="10" rows="4" class="form-control"
-                                placeholder="Add your comment here"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-40 text-center">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-        {{/if}}
     </div>
+
+    <div class="row animate-box single fh5co-heading">
+        <div class="col-md-6">
+            <img class="img-responsive" src="{{book.image_url}}" alt="{{book.title}}">
+        </div>
+        <div class="col-md-6">
+            <div class="desc">
+                <h3>Author</h3>
+                <p>{{book.author}}</p>
+            </div>
+            <div class="desc">
+                <h3>Summary</h3>
+                <p>{{book.summary}}</p>
+            </div>
+        </div>
+        <div class="col-md-12 text-center mt-25">
+            <h4>Posted by {{book.user.username}} on {{format_date book.created_at}}</h4>
+        </div>
+    </div>
+
+    {{#if book.comments.length}}
+    {{> comments book.comments}}
+    {{/if}}
+
+    {{#if loggedIn}}
+    <div class="row animate-box">
+        <div class="col-md-10 col-md-offset-1">
+            <h3>Add a comment</h3>
+
+            <form class="comment-form">
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <textarea name="comment" id="comment" cols="10" rows="4" class="form-control"
+                            placeholder="Add your comment here"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group mt-40 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {{/if}}
 </div>
+
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
