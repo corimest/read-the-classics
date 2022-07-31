@@ -323,3 +323,6 @@ footer {
 .btn:hover{
     color: white;
 }
+.animate__animated.animate__tada {
+    --animate-duration: 3s;
+  }
