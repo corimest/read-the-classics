@@ -13,10 +13,10 @@
 
 <body>
     <div id="page">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-around">
             <a class="navbar-brand mb-0 h1" href="/">Read The Classics</a>
 
-            <!-- Example split success button -->
             <div class="justify-content-around">
                 <div class="btn-group">
                     <button type="button" class="btn btn-success"><a href="/books"
@@ -51,22 +51,8 @@
             {{{body}}}
         </main>
 
-        <footer id="fh5co-footer" role="contentinfo">
+        <footer class="bg-light">
             <div class="container">
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">Classics with Cats &copy;
-                                <script>document.write(new Date().getFullYear());</script> All Rights
-                                Reserved.
-                            </small>
-                            <small class="block">Designed &amp; developed by <a href="https://github.com/zwind66"
-                                    target="_blank">Shuai
-                                    Zuo</a> &amp; <a href="https://github.com/corimest" target="_blank">Corinne
-                                    Corinne</a></small>
-                        </p>
-                    </div>
-                </div>
                 <!-- sleeping orange cat HTML -->
                 <div class="container-sleepy">
                     <div class="sleepy-body">
@@ -89,12 +75,23 @@
                     <div class="sleepy-l2"></div>
                     <div class="sleepy-tail"></div>
                 </div>
+
+                <div class="row align-self-center">
+                    <div class="text-center">
+                        <p>
+                            <small class="d-block">Classics with Cats &copy;
+                                <script>document.write(new Date().getFullYear());</script> All Rights
+                                Reserved.
+                            </small>
+                            <small class="d-block">Designed &amp; developed by <a href="https://github.com/zwind66"
+                                    target="_blank">Shuai
+                                    Zuo</a> &amp; <a href="https://github.com/corimest" target="_blank">Corinne
+                                    Corinne</a></small>
+                        </p>
+                    </div>
+                </div>
             </div>
         </footer>
-    </div>
-
-    <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
 
     {{#if loggedIn}}

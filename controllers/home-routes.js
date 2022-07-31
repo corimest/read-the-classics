@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     Book.findAll({
         where: {
           id: {
-            [Op.between]: [1,6]
+            [Op.between]: [1,8]
           }
         },
         attributes: [

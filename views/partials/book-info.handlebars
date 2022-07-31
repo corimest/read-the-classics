@@ -1,14 +1,10 @@
-<div class="col-md-4 text-center animate-box fadeInUp animated-fast">
-    <a href="/books/{{id}}">
-        <div class="product">
-            <div class="product-grid" style="background-image:url({{image_url}});">
-                <div class="inner">
-                    <img class="img-responsive" src="{{book.image_url}}" alt="{{book.title}}">
-                </div>
-            </div>
-            <div class="desc">
-                <h3>{{title}}</h3>
-            </div>
+<div class="col-3 text-center pt-5">
+    <a href="/books/{{id}}" class="text-decoration-none text-secondary ">
+        <div>
+            <img src="{{image_url}}" width="300px" height="400px" alt="{{book.title}}">
+        </div>
+        <div class="pt-3">
+            <h3>{{title}}</h3>
         </div>
     </a>
 </div>
