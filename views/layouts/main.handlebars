@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read The Classics</title>
+    <title>Classics with Cats</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css" />
@@ -14,14 +14,14 @@
 <body>
     <div id="page">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-around">
-            <a class="navbar-brand mb-0 h1" href="/">Read The Classics</a>
+         <nav class="navbar navbar-expand-lg justify-content-around" style="background-color:rgb(177, 222, 220); border-radius: 10px; font-family: 'Courier New', Courier, monospace">
+            <a class="navbar-brand mb-0 h1" href="/">Classics with Cats</a>
 
-            <div class="justify-content-around">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-success"><a href="/books"
-                            class="text-decoration-none text-light">Books</a></button>
-                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split"
+            <div class="d-flex justify-content-center">
+                <div class="btn-group" style="width: 100px; margin: 10px">
+                    <button type="button" class="btn" style="width: 100px"><a href="/books"
+                            class="text-decoration-none text-black">Books</a></button>
+                    <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
                         data-bs-toggle="dropdown" aria-expanded="false">
                     </button>
                     <ul class="dropdown-menu">
@@ -41,8 +41,8 @@
                         class="text-decoration-none text-light">MyBooks</button>
                 <button class="btn btn-danger "><a id="logout">Logout</a></button>
                 {{else}}
-                <button class="btn btn-success"><a href="/login"
-                        class="text-decoration-none text-light">Login</a></button>
+                <button class="btn text-black" style="background: rgb(254, 155, 169); margin: 10px; padding: 0px; width: 100px"><a href="/login"
+                        class="text-decoration-none text-black">Login</a></button>
                 {{/if}}
             </div>
         </nav>
@@ -51,8 +51,8 @@
             {{{body}}}
         </main>
 
-        <footer class="bg-light">
-            <div class="container">
+        <footer class="bg-footer">
+            <div class="container-footer">
                 <!-- sleeping orange cat HTML -->
                 <div class="container-sleepy">
                     <div class="sleepy-body">

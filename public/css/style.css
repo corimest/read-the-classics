@@ -57,7 +57,7 @@ h1{
 }
 .box4{
     height: 30px;
-    width: 200px;
+    width: 214px;
     background-color: deepskyblue;
     position: relative;
     top: -308px;
@@ -172,7 +172,7 @@ h1{
     transform: rotate(-225deg);
 }
 
-/
+
 footer {
     background-color: rgb(177, 222, 220);
     margin: 0;
@@ -183,6 +183,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 20px;
+}
+.bg-footer {
+    background-color: rgb(177, 222, 220);
 }
 /* Sleepy Orange Cat CSS */
 .container-sleepy{
@@ -333,8 +336,8 @@ footer {
     background-color: rgba(255,255,255, 1);
     border: none;
   }
-.login-form button {
-    width: 100%;
+.btn{
+    width: 75%;
     border: none;
     background: rgb(254, 155, 169);
     color: black;
@@ -344,9 +347,8 @@ footer {
     border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-.login-form button:hover {
+.btn:hover{
     color: white;
-    background: #39a6b2;
 }
 .login-info > * {
     flex: 1;
@@ -364,10 +366,7 @@ footer {
 ul{
     list-style: none;
 }
-.api {
-    border: 2px solid black;
-    width: 1150px;
-}
+
 
 /* Search Form Css */
 .search {
