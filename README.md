@@ -40,5 +40,6 @@ This is the application's MVP. The basic functionality of the app has been creat
 
   GitHub: Corinne Mestemacher: [corimest](https://github.com/corimest)
           Shuai Zuo: [zwind66](https://github.com/zwind66)
+          
   Email: Corinne Mestemacher: [corimest@gmail.com](mailto:corimest@gmail.com)
          Shuai Zuo: [szuo1@vols.utk.edu](mailto:szuo1@vols.utk.edu)
