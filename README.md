@@ -3,6 +3,8 @@
 ## Description
 "Classics with Cats" is a web application that provides a safe chat room and search engine for young girls. This application was made for girls ages 9-13 who are searching for new books to read and a way to connect with other girls who share a passion for literature. 
 
+![Screen Shot 2022-07-24 at 4 00 01 PM](https://user-images.githubusercontent.com/88792082/182043251-90cdb151-61c4-474e-95ed-655f8782cee4.png)
+
 Some of the technologies we used are Handlebars.js, SQL, JavaScript, CSS, Bootstrap, and Animate.css. 
 
 ## Usage
