@@ -1,34 +1,46 @@
-<div class="container">
-    <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>Books</h2>
-        </div>
-
+<div class="pt-5 pb-5 text-center">
+    <h2>Books</h2>
+</div>
+<div class="bg-light row  d-flex justify-content-center" style="padding-top: 30px; padding-bottom: 30px">
+    <div class="col-1 text-center">
+        <a href="/books">
+            <h3 class="btn btn-outline-success">ALL BOOKS</h3>
+        </a>
     </div>
+    <div class="col-1 text-center">
+        <a href="/books/category/Fiction">
+            <h3 class="btn btn-outline-success">FICTION</h3>
+        </a>
+    </div>
+    <div class="col-1 text-center">
+        <a href="/books/category/Nonfiction">
+            <h3 class="btn btn-outline-success">NONFICTION</h3>
+        </a>
+    </div>
+    <div class="col-1 text-center">
+        <a href="/books/category/Drama">
+            <h3 class="btn btn-outline-success">DRAMA</h3>
+        </a>
+    </div>
+    <div class="col-1 text-center">
+        <a href="/books/category/Poetry">
+            <h3 class="btn btn-outline-success">POETRY</h3>
+        </a>
+    </div>
+    <div class="col-1 text-center">
+        <a href="/books/category/Folklore">
+            <h3 class="btn btn-outline-success">FOLKLORE</h3>
+        </a>
+    </div>
+</div>
 
-    <div class="row">
-        <div class="fh5co-tabs animate-box">
-            <!-- Tabs -->
-            <ul class="fh5co-tab-nav">
-                <li><a href="/books">View All</a></li>
-                <li><a href="/books/category/Fiction">Fiction</a></li>
-                <li><a href="/books/category/Nonfiction">Nonfiction</a></li>
-                <li><a href="/books/category/Drama">Drama</a></li>
-                <li><a href="/books/category/Poetry">Poetry</a></li>
-                <li><a href="/books/category/Folklore">Folklore</a></li>
-            </ul>
-
-            <!-- Tabs Content -->
-            <div class="row">
-
-                <div class="tab-content">
-                    <div class="row">
-                        {{#each books as |book|}}
-                        {{> book-info book }}
-                        {{/each}}
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container">
+    <div class="pt-5 text-center text-secondary font-weight-bold">
+        <h2>Featured Books</h2>
+    </div>
+    <div class="row justify-content-center">
+        {{#each books as |book|}}
+        {{> book-info book }}
+        {{/each}}
     </div>
 </div>

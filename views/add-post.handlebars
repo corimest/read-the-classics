@@ -1,68 +1,61 @@
-<div class="container">
-    <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2>Add New Book</h2>
-            <p><em>All fields are required</em></p>
-        </div>
-
+<div class="container tex">
+    <div class="text-center pt-5">
+        <h2>Add New Book</h2>
+        <p><em>All fields are required</em></p>
     </div>
 
-    <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 fh5co-heading">
+    <div class="row">
+        <form class="new-book-form">
+            <div class="pt-2">
+                <label for="title">
+                    <h4>Title</h4>
+                </label>
+                <input type="text" id="title" class="form-control">
+            </div>
 
-            <form class="new-book-form" action="#">
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" class="form-control" placeholder="">
-                    </div>
+            <div class="pt-2">
+                <label for="author">
+                    <h4>Author</h4>
+                </label>
+                <input type="text" id="author" class="form-control">
+            </div>
+
+            <div class="pt-2">
+                <label for="summary">
+                    <h4>Summary</h4>
+                </label>
+                <textarea name="summary" id="summary" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+
+            <div class="pt-2">
+                <label for="image_link">
+                    <h4>Image link</h4>
+                </label>
+                <input type="text" id="image_link" class="form-control" placeholder="A url to your image">
+            </div>
+
+            <div class="pt-2">
+                <label for="category">
+                    <h4>Category</h4>
+                </label>
+                <div class="col-md-12">
+                    <select id="category" class="select-css">
+                        <option value="">Please choose a category</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Nonfiction">Nonfiction</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Poetry">Poetry</option>
+                        <option value="Folklore">Folklore</option>
+                    </select>
                 </div>
+            </div>
 
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="author">Author</label>
-                        <textarea name="author" id="author" cols="10" rows="10" class="form-control"
-                            placeholder=""></textarea>
-                    </div>
-                </div>
+            <div class="text-center">
+                <input type="submit" value="Submit" class="btn btn-primary btn-lg active">
+            </div>
+        </form>
 
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="summary">Summary</label>
-                        <textarea name="summary" id="summary" cols="30" rows="10" class="form-control"
-                            placeholder=""></textarea>
-                    </div>
-                </div>
 
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="image_link">Image link</label>
-                        <input type="text" id="image_link" class="form-control" placeholder="A url to your image">
-                    </div>
-                </div>
-
-                <div class="row form-group">
-                    <div class="col-md-12">
-                        <label for="category">Category</label>
-                    </div>
-                    <div class="col-md-12">
-                        <select id="category" class="select-css">
-                            <option value="">Please choose a category</option>
-                            <option value="Fiction">Fiction</option>
-                            <option value="Nonfiction">Nonfiction</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Poetry">Poetry</option>
-                            <option value="Folklore">Folklore</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div class="form-group mt-40 text-center">
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </div>
-            </form>
-
-        </div>
     </div>
 </div>
 
