@@ -22,12 +22,17 @@ Some of the technologies we used are Handlebars.js, SQL, JavaScript, CSS, Bootst
   
   <img width="566" alt="Screen Shot 2022-07-31 at 3 07 31 PM" src="https://user-images.githubusercontent.com/88792082/182043377-9ad1c1d9-dbb9-4de6-9f3d-ed77f8a19263.png">
 
+  <img width="741" alt="Screen Shot 2022-07-31 at 4 04 35 PM" src="https://user-images.githubusercontent.com/88792082/182045290-5fe1f133-9c41-4fe2-b400-bb053116eb7a.png">
+
+
 ## MVP
 This is the application's MVP. The basic functionality of the app has been created, but we do wish to add more to it in the future. Below is a list of features we hope to add. 
 
 - Cat avatar creation and customization for users
 - More books continuously added to the library
 - Additional styling tweaks 
+- Consistent styling of all buttons
+- A link to an online store where users can buy books
 - More cats!
       
 ## Contact 

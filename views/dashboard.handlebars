@@ -1,15 +1,15 @@
 <div class="container">
-    <div class="pt-5 pb-5 text-center">
+    <div class="pt-5 pb-5 text-center" style="font-family: 'Courier New', Courier, monospace">
         <h2>My Books</h2>
         <p class="mt-4">
-            <a href="/dashboard/new" class="btn btn-primary btn-outline btn-lg">Add a Book</a>
+            <a href="/dashboard/new" class="btn">Add a Book</a>
         </p>
     </div>
     {{#if books.length}}
-    <div class="row">
+    <div class="d-flex flex-column justify-content-center align-items-center">
         {{#each books as |book|}}
         {{> book-info book }}
-        <a href="/dashboard/edit/{{id}}" class="btn btn-primary btn-outline btn-lg">Edit Book</a>
+        <a href="/dashboard/edit/{{id}}" class="btn d-flex column justify-content-center" style="height: 50px; width: 100px">Edit Book</a>
         {{/each}}
     </div>
     {{/if}}
