@@ -5,11 +5,6 @@
 
 Some of the technologies we used are Handlebars.js, SQL, JavaScript, CSS, Bootstrap, and Animate.css. 
 
-## Table of Contents
-  * [Usage](#usage)
-  * [MVP] (#MVP)
-  * [Contact Info](#contact)
-
 ## Usage
   Anyone can use "Classics with Cats" to discover books. Our library can be filtered by genre. When you click on the book cover image, you will be taken to a more detailed exploration of that book, including summary, author, and comments from other "cats".
 
