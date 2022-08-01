@@ -1,6 +1,14 @@
 # Classics with Cats
 
+![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+
 <img width="990" alt="Screen Shot 2022-07-31 at 3 06 16 PM" src="https://user-images.githubusercontent.com/88792082/182043328-1f21e433-3b80-42bb-9bb9-7426d5e9355e.png">
+
+## 💡💡💡Finished work
+
+* [The Link of the deployed application.](https://zwind66.github.io/What-s-for-tomorrow/)
+
+* [The Link of the GitHub repository.](https://github.com/corimest/read-the-classics)
 
 ## Description
 "Classics with Cats" is a web application that provides a safe chat room and search engine for young girls. This application was made for girls ages 9-13 who are searching for new books to read and a way to connect with other girls who share a passion for literature. 
@@ -34,7 +42,34 @@ This is the application's MVP. The basic functionality of the app has been creat
 - Consistent styling of all buttons
 - A link to an online store where users can buy books
 - More cats!
-      
+
+## Installation
+
+The user should clone the repository from GitHub and download Node.
+`git clone`   `npm i`  `mysql -u root -p` `source db/schema.sql` `quit` `npm run seeds`  `npm start`
+
+## Tests
+
+Run `npm test` to run Jest tests
+
+## License
+
+![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+
+This application is covered by the MIT license.
+
+## Built With
+
+* Node.js
+* CSS
+* JS
+* APIs
+* Express.js
+* SQL
+* ORM
+* MVC
+* Animate
+
 ## Contact 
   If you have any additional questions, feel free to contact us.
 
