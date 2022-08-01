@@ -61,6 +61,8 @@ This application is covered by the MIT license.
 ## Built With
 
 * Node.js
+* Handlebars.js
+* Bootstrap
 * CSS
 * JS
 * APIs
@@ -68,7 +70,7 @@ This application is covered by the MIT license.
 * SQL
 * ORM
 * MVC
-* Animate
+* Animate.css
 
 ## Contact 
   If you have any additional questions, feel free to contact us.
