@@ -6,7 +6,7 @@
 
 ## 💡💡💡Finished work
 
-* [The Link of the deployed application.](https://zwind66.github.io/What-s-for-tomorrow/)
+* [The Link of the deployed application.](https://read-the-calssics.herokuapp.com/)
 
 * [The Link of the GitHub repository.](https://github.com/corimest/read-the-classics)
 
