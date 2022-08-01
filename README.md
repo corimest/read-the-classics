@@ -46,6 +46,7 @@ This is the application's MVP. The basic functionality of the app has been creat
 ## Installation
 
 The user should clone the repository from GitHub and download Node.
+
 `git clone` `npm i`  `mysql -u root -p` `source db/schema.sql` `quit` `npm run seeds`  `npm start`
 
 ## Tests
