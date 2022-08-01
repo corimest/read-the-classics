@@ -4,6 +4,17 @@
 
 <img width="990" alt="Screen Shot 2022-07-31 at 3 06 16 PM" src="https://user-images.githubusercontent.com/88792082/182043328-1f21e433-3b80-42bb-9bb9-7426d5e9355e.png">
 
+ ## Table of Contents
+  - [Finished Work](#💡💡💡finished-work)
+  - [Description](#description)
+  - [Usage](#usage)
+  - [MVP](#MVP)
+  - [Installation](#installation)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Built With](#built-with)
+  - [Contact](#contact)
+
 ## 💡💡💡Finished work
 
 * [The Link of the deployed application.](https://read-the-calssics.herokuapp.com/)
